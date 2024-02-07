@@ -2,11 +2,14 @@ const path = require('path')
 const { DefinePlugin } = require('webpack')
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
+  resolve: {
+    extensions: ['.js', '.mjs', '.cjs', '.jsx'],
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
         options: {

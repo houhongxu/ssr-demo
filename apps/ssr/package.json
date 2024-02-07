@@ -6,7 +6,7 @@
   "scripts": {
     "dev:client": "webpack --config webpack.client.js --watch",
     "dev:server": "webpack --config webpack.server.js --watch",
-    "dev": "nodemon dist/server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
